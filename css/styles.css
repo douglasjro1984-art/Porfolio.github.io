@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 
 * {
   margin: 0;
@@ -6,67 +6,81 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a:focus-visible,
+.download-cv:focus-visible,
+button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* ---------- Inicio ---------- */
 .wrapper {
-  background-image:url(../img/fondo-desktop.jpg);
-  width: 100vw;
-  height: 115vh;
+  background-image: url(../img/fondo-desktop.jpg);
+  width: 100%;
+  min-height: 115vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #09f028;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 5em;
 }
+
 .brand {
   margin-top: -7px;
 }
+
 .brand span {
   color: rgb(32, 224, 6);
 }
+
 .menu {
   display: flex;
   width: 50%;
   justify-content: space-around;
 }
-.menu  li {
-  list-style: none;
 
+.menu li {
+  list-style: none;
 }
+
 .menu a {
   color: #ebf0ea;
   text-decoration: none;
-  padding: 10px 20px; 
+  padding: 10px 20px;
 }
 
-.menu li:hover a{
+.menu li:hover a {
   background-color: aqua;
   color: #191c32;
 }
 
 .menu .active {
   color: aqua;
- 
 }
-
 
 .menu li a:hover {
   color: #66E7C8;
 }
-
 
 .main {
   margin: 0 auto;
   width: 80vw;
   height: 80vh;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2em;
 }
@@ -79,16 +93,34 @@ h1 {
   color: aqua;
 }
 
+.info-content .role {
+  color: aqua;
+  font-size: 1.4em;
+  margin-top: 8px;
+}
+
+.info-content .lead {
+  color: #ebf0ea;
+  font-size: 1.05em;
+  line-height: 1.6;
+  margin-top: 16px;
+  max-width: 46ch;
+}
+
 .download-cv {
+  display: inline-block;
   padding: 10px 20px;
   background-color: aqua;
+  color: #191c32;
+  font-family: inherit;
+  font-size: 1em;
+  text-decoration: none;
   border: none;
   border-radius: 20px;
   margin-top: 10px;
+  margin-right: 8px;
   cursor: pointer;
-  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
 }
 
 .download-cv:hover {
@@ -96,17 +128,30 @@ h1 {
   box-shadow: none;
 }
 
+.download-cv.outline {
+  background-color: transparent;
+  color: aqua;
+  border: 2px solid aqua;
+  padding: 8px 18px;
+}
+
+.download-cv.outline:hover {
+  background-color: aqua;
+  color: #191c32;
+}
+
 .main img {
-  border:  7px solid aqua;
+  border: 7px solid aqua;
   width: 350px;
   height: 520px;
   z-index: 1;
 }
 
+/* ---------- Acerca de mí ---------- */
 .about {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  width: 100vw;
+  width: 100%;
   align-items: center;
 }
 
@@ -135,177 +180,41 @@ h1 {
 
 .about p {
   margin-bottom: 1em;
+  line-height: 1.6;
 }
 
-.portfolio,
-.contact-section {
-  width: 100vw;
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1.2em 0 1.2em;
+}
+
+.skills li {
   background-color: #191c32;
-  color: #fff;
-}
-
-.portfolio-heading {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-
-.portfolio-heading h2,
-.contact-heading h2 {
-  font-size: 2.5em;
-  color: #fff;
-}
-
-.portfolio .container {
-  width: 80vw;
-  height: 80vh;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card {
-  width: 300px;
-  background-color: #2b3058;
-  margin: 1em;
-}
-
-.card__img {
-  width: 100%;
-  height: 150px;
-  background-image: url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543491/samples/2-original_agisst.png);
-  background-size: cover;
-}
-
-.card__title {
-  padding: 20px;
-}
-
-.card__proyect-links {
-  display: flex;
-  justify-content: space-evenly;
-}
-.card__proyect-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.card__proyect-links i {
-  font-size: 1.5em;
-}
-
-.button-content {
-  display: flex;
-  justify-content: center;
-  margin: 1em;
-}
-
-.project-details-button a {
-  text-decoration: none;
-  color: #191c32;
-}
-
-
-.contact-section {
-  padding: 3em;
-}
-
-.container-contact {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.contact-section img {
-  width: 750px;
-  height: 700px;
-  bottom: 0px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
-  margin-top: 2em;
-}
-.form-group textarea {
-  height: 150px;
-  padding: 1.5em;
-  background: none;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-.form-group .input {
-  padding: 10px 20px;
-  margin-bottom: 1em;
-  background: none;
-  border: none;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-}
-
-.form-group .btn-submit {
-  padding: 10px 20px;
-  margin: 1em;
+  color: aqua;
+  padding: 4px 14px;
   border-radius: 20px;
-  border: none;
-  text-transform: uppercase;
-  background-color: aqua;
+  font-size: .85em;
 }
 
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 200px;
-  padding: 2em;
-  background-color: aqua;
-}
-
-.footer-content h2 {
-  font-size: 3em;
-}
-
-.footer-content h5 {
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.sotial-networks {
-  display: flex;
-  justify-content: space-evenly;
-  width: 300px;
-  margin-top: 1em;
-}
-
-.sotial-networks i {
-  font-size: 1.5em;
-}
-
+/* ---------- Portafolio ---------- */
 .portfolio,
 .contact-section {
-  width: 100vw;
+  width: 100%;
   background-color: #191c32;
   color: #fff;
 }
 
 .portfolio-heading {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 5em;
 }
 
-
 .portfolio-heading h2,
 .contact-heading h2 {
   font-size: 2.5em;
@@ -314,17 +223,17 @@ h1 {
 
 .portfolio .container {
   width: 80vw;
-  height: 80vh;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: 5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 2em;
 }
 
 .card {
-  width: 300px;
+  display: flex;
+  flex-direction: column;
   background-color: #2b3058;
-  margin: 1em;
 }
 
 .card__img {
@@ -335,13 +244,50 @@ h1 {
 }
 
 .card__title {
-  padding: 20px;
+  padding: 20px 20px 8px;
+}
+
+.card__title h2 {
+  font-size: 1.2em;
+  line-height: 1.3;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 2px 12px;
+  border-radius: 20px;
+  font-size: .78em;
+  font-weight: 700;
+  background-color: aqua;
+  color: #191c32;
+}
+
+.badge.dev {
+  background-color: transparent;
+  color: aqua;
+  border: 1px solid aqua;
+}
+
+.card__text {
+  padding: 0 20px;
+  font-size: .92em;
+  line-height: 1.55;
+  color: #dfe2ff;
+}
+
+.card__stack {
+  padding: 10px 20px 14px;
+  font-size: .82em;
+  color: aqua;
 }
 
 .card__proyect-links {
   display: flex;
   justify-content: space-evenly;
+  min-height: 1.5em;
 }
+
 .card__proyect-links a {
   color: #fff;
   text-decoration: none;
@@ -355,23 +301,38 @@ h1 {
   display: flex;
   justify-content: center;
   margin: 1em;
+  margin-top: auto;
+  padding-top: 1em;
 }
 
-.project-details-button a {
-  text-decoration: none;
-  color: #191c32;
+.project-details-button {
+  margin-top: 0;
+  margin-right: 0;
 }
 
+.project-details-button.off {
+  background-color: transparent;
+  color: #b9bde0;
+  border: 1px solid #b9bde0;
+  box-shadow: none;
+  cursor: default;
+  padding: 9px 19px;
+}
+
+.project-details-button.off:hover {
+  background-color: transparent;
+}
+
+/* ---------- Contacto ---------- */
 .contact-section {
   padding: 3em;
 }
 
 .container-contact {
-  margin: 0 auto;
-  margin-top: 10em;
+  margin: 10em auto 0;
+  display: flex;
+  align-items: center;
 }
-
-
 
 .contact-section img {
   width: 750px;
@@ -385,12 +346,14 @@ h1 {
   width: 30vw;
   margin-top: 2em;
 }
+
 .form-group textarea {
   height: 150px;
   padding: 1.5em;
   background: none;
   border: 1px solid #fff;
   color: #fff;
+  font-family: inherit;
 }
 
 .form-group .input {
@@ -400,6 +363,7 @@ h1 {
   border: none;
   border-bottom: 1px solid #fff;
   color: #fff;
+  font-family: inherit;
 }
 
 .form-group .btn-submit {
@@ -409,15 +373,25 @@ h1 {
   border: none;
   text-transform: uppercase;
   background-color: aqua;
+  cursor: pointer;
 }
 
+.direct {
+  margin-top: 1em;
+  font-size: .95em;
+}
 
+.direct a {
+  color: aqua;
+}
+
+/* ---------- Pie ---------- */
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 200px;
   padding: 2em;
   background-color: aqua;
@@ -439,6 +413,101 @@ h1 {
   margin-top: 1em;
 }
 
+.sotial-networks a {
+  color: #191c32;
+}
+
 .sotial-networks i {
   font-size: 1.5em;
+}
+
+/* ---------- Celulares y tablets ---------- */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.5em;
+  }
+
+  .menu {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .menu a {
+    padding: 8px 10px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .main {
+    width: 90vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    padding-bottom: 3em;
+  }
+
+  .main img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .about {
+    display: block;
+  }
+
+  .about img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .about-info {
+    padding: 1.5em;
+  }
+
+  .about-info h2 {
+    font-size: 2em;
+  }
+
+  .portfolio-heading {
+    padding: 2em 1.5em;
+  }
+
+  .portfolio .container {
+    width: 90vw;
+  }
+
+  .contact-section {
+    padding: 2em 1.5em;
+  }
+
+  .container-contact {
+    margin-top: 2em;
+    flex-direction: column;
+  }
+
+  .contact-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .footer {
+    height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
