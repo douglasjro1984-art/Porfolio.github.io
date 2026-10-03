@@ -1,178 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Douglas Romero | Desarrollador Backend Jr.</title>
-  <meta name="description" content="Portafolio de Douglas Romero, desarrollador backend junior (Python y Node.js). Sistemas de gestión para negocios en funcionamiento.">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Douglas Romero | Desarrollador Backend Jr.</title>
+<meta name="description" content="Portafolio de Douglas Romero, desarrollador backend junior (Python y Node.js). Sistemas de gestión para negocios en funcionamiento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-  <div class="wrapper" id="inicio">
-    <header>
-      <nav class="navbar">
-        <div class="brand">
-          <h1>D <span>R</span></h1>
-        </div>
-        <ul class="menu">
-          <li><a href="#inicio" class="active">Inicio</a></li>
-          <li><a href="#quien-soy">Quién soy</a></li>
-          <li><a href="#portafolio">Portafolio</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="info-content">
-        <h1>Soy <span>Douglas</span> Romero</h1>
-        <h3 class="role">Desarrollador Backend Jr. (Python y Node.js)</h3>
-        <p class="lead">Desarrollo sistemas de gestión para negocios reales: ventas, stock, turnos y control de asistencia. Busco mi primera oportunidad profesional como desarrollador junior.</p>
-        <a class="download-cv" href="CV_Douglas_Romero.pdf" download>Descargar CV</a>
-        <a class="download-cv outline" href="#portafolio">Ver proyectos</a>
-      </div>
-      <img src="img/sin fondo.png" alt="Foto de Douglas Romero">
-    </main>
+<header class="nav">
+  <div class="bar">
+    <a class="logo" href="#inicio">Douglas Romero</a>
+    <nav aria-label="Principal"><a href="#proyectos">Proyectos</a><a href="#quien-soy">Quién soy</a><a href="#contacto">Contacto</a></nav>
+    <a class="btn small" href="CV_Douglas_Romero.pdf" download>Descargar CV</a>
   </div>
-
-  <div class="about" id="quien-soy">
-    <img src="img/horizonte.png" alt="Douglas Romero">
-    <div class="about-info">
-      <h2>Acerca de mí</h2>
-      <div class="divider"></div>
-      <p>Soy técnico programador en formación en la UTN, en Tucumán. Aprendo construyendo: cada sistema salió de un problema concreto de un negocio, como llevar el stock, agendar turnos o controlar la asistencia.</p>
-      <p>Mi base está en Python y Node.js, con bases de datos MySQL y APIs REST. Tres de mis sistemas (carnicería, estética y la carta digital de Cocobongo) se hicieron para locales que están en funcionamiento.</p>
-      <p>Certificados: Python (UTN, 05/2025), Ciberseguridad y Ethical Hacking (Hacker Mentor Academy) y desarrollo web con IA (Big School).</p>
-      <ul class="skills"><li>Python</li><li>Flask</li><li>FastAPI</li><li>Node.js</li><li>Express</li><li>APIs REST</li><li>MySQL</li><li>SQL</li><li>JavaScript</li><li>HTML y CSS</li><li>React</li><li>Git y GitHub</li><li>Tkinter</li><li>Java (en formación)</li></ul>
-      <a class="download-cv" href="CV_Douglas_Romero.pdf" download>Descargar CV</a>
-    </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <p class="status"><span></span>Busco mi primera oportunidad como junior</p>
+    <h1>Douglas Romero</h1>
+    <p class="role">Desarrollador Backend Jr. (Python y Node.js)</p>
+    <p class="lead">Desarrollo sistemas de gestión para negocios reales: ventas, stock, turnos y control de asistencia.</p>
+    <div class="cta"><a class="btn" href="#proyectos">Ver proyectos</a><a class="btn ghost" href="#contacto">Contactarme</a></div>
+    <dl class="stats"><div><dt>3</dt><dd>sistemas en funcionamiento</dd></div><div><dt>9</dt><dd>proyectos</dd></div><div><dt>2</dt><dd>lenguajes de backend</dd></div></dl>
   </div>
+  <div class="photo"><img src="img/sin%20fondo.png" alt="Douglas Romero"></div>
+</section>
 
-  <div class="portfolio" id="portafolio">
-    <div class="portfolio-heading">
-      <h2>Mi portafolio</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="container">
-      <div class="card">
-        <div class="card__img"></div>
-        <div class="card__title"><h2>Sistema de gestión de carnicería</h2><span class="badge">En funcionamiento</span></div>
-        <p class="card__text">El Matadero. Compra, venta y control de materia prima, con API REST y base de datos escalable.</p>
-        <p class="card__stack">Python, Flask, MySQL</p>
-        <div class="card__proyect-links"><a href="https://github.com/douglasjro1984-art/el-matadero-carniceria" aria-label="Código en GitHub"><i class="fab fa-github"></i></a><a href="https://el-matadero-carniceria-1.onrender.com/" aria-label="Ver demo"><i class="fas fa-globe-asia"></i></a></div>
-        <div class="button-content"><a class="download-cv project-details-button" href="https://github.com/douglasjro1984-art/el-matadero-carniceria">Ver código</a></div>
-      </div>
-      <div class="card">
-        <div class="card__img"></div>
-        <div class="card__title"><h2>Sistema de gestión de estética</h2><span class="badge">En funcionamiento</span></div>
-        <p class="card__text">Turnos y servicios de un local de estética, con control de gastos y ganancias.</p>
-        <p class="card__stack">JavaScript</p>
-        <div class="card__proyect-links"><a href="https://github.com/douglasjro1984-art/app-chamas-tucuman" aria-label="Código en GitHub"><i class="fab fa-github"></i></a></div>
-        <div class="button-content"><a class="download-cv project-details-button" href="https://github.com/douglasjro1984-art/app-chamas-tucuman">Ver código</a></div>
-      </div>
-      <div class="card">
-        <div class="card__img"></div>
-        <div class="card__title"><h2>Carta digital de Cocobongo</h2><span class="badge">En funcionamiento</span></div>
-        <p class="card__text">Carta digital web para un local gastronómico.</p>
-        <p class="card__stack">HTML, CSS, JavaScript</p>
-        <div class="card__proyect-links"><a href="https://github.com/douglasjro1984-art/menu_cocobongo" aria-label="Código en GitHub"><i class="fab fa-github"></i></a></div>
-        <div class="button-content"><a class="download-cv project-details-button" href="https://github.com/douglasjro1984-art/menu_cocobongo">Ver código</a></div>
-      </div>
-      <div class="card">
-        <div class="card__img"></div>
-        <div class="card__title"><h2>Asistente de hábitos para niños</h2></div>
-        <p class="card__text">Puntos y rachas, roles de padre e hijo, aprobación de canjes y autenticación por tokens.</p>
-        <p class="card__stack">Node.js, Express, MySQL</p>
-        <div class="card__proyect-links"><a href="https://github.com/douglasjro1984-art/Asistente-de-habitos" aria-label="Código en GitHub"><i class="fab fa-github"></i></a></div>
-        <div class="button-content"><a class="download-cv project-details-button" href="https://github.com/douglasjro1984-art/Asistente-de-habitos">Ver código</a></div>
-      </div>
-      <div class="card">
-        <div class="card__img"></div>
-        <div class="card__title"><h2>AniMarket</h2></div>
-        <p class="card__text">App de ventas con backend y frontend separados, preparada para desplegar en Render.</p>
-        <p class="card__stack">Node.js</p>
-        <div class="card__proyect-links"><a href="https://github.com/douglasjro1984-art/AniMarket" aria-label="Código en GitHub"><i class="fab fa-github"></i></a></div>
-        <div class="button-content"><a class="download-cv project-details-button" href="https://github.com/douglasjro1984-art/AniMarket">Ver código</a></div>
-      </div>
-      <div class="card">
-        <div class="card__img"></div>
-        <div class="card__title"><h2>Control de estacionamiento</h2></div>
-        <p class="card__text">Aplicación con servidor y cliente separados y script de migración de base de datos.</p>
-        <p class="card__stack">Node.js</p>
-        <div class="card__proyect-links"><a href="https://github.com/douglasjro1984-art/tracker-app" aria-label="Código en GitHub"><i class="fab fa-github"></i></a></div>
-        <div class="button-content"><a class="download-cv project-details-button" href="https://github.com/douglasjro1984-art/tracker-app">Ver código</a></div>
-      </div>
-      <div class="card">
-        <div class="card__img"></div>
-        <div class="card__title"><h2>Reserva de canchas de pádel</h2></div>
-        <p class="card__text">Reserva de turnos de canchas y alquiler de indumentaria deportiva.</p>
-        <p class="card__stack">Aplicación web</p>
-        <div class="card__proyect-links"><a href="https://github.com/douglasjro1984-art/cancha-padel-app" aria-label="Código en GitHub"><i class="fab fa-github"></i></a></div>
-        <div class="button-content"><a class="download-cv project-details-button" href="https://github.com/douglasjro1984-art/cancha-padel-app">Ver código</a></div>
-      </div>
-      <div class="card">
-        <div class="card__img"></div>
-        <div class="card__title"><h2>Órdenes de trabajo y turnos</h2><span class="badge dev">En desarrollo</span></div>
-        <p class="card__text">Multiservicios Servieltec. Recepción de equipos con fotos y fallas, presupuesto con aprobación del cliente y PDF.</p>
-        <p class="card__stack">React</p>
-        <div class="card__proyect-links"></div>
-        <div class="button-content"><span class="download-cv project-details-button off">Código privado</span></div>
-      </div>
-      <div class="card">
-        <div class="card__img"></div>
-        <div class="card__title"><h2>Asistencia y tareas</h2></div>
-        <p class="card__text">La Ciénega. Marcación con QR personalizado, roles de empleado, encargado y administrador, verificación biométrica y GPS.</p>
-        <p class="card__stack">Aplicación web</p>
-        <div class="card__proyect-links"></div>
-        <div class="button-content"><span class="download-cv project-details-button off">Código privado</span></div>
-      </div>
-    </div>
+<section id="proyectos">
+  <h2>Proyectos</h2>
+  <p class="sub">Los tres destacados los hice para locales que hoy están en funcionamiento.</p>
+  <div class="grid">
+<article class="card feat"><span class="badge">En funcionamiento</span><h3>Sistema de gestión de carnicería</h3><p>El Matadero. Compra, venta y control de materia prima, con API REST y base de datos escalable.</p><ul class="chips"><li>Python</li><li>Flask</li><li>MySQL</li></ul><div class="links"><a href="https://el-matadero-carniceria-1.onrender.com/"><i class="fas fa-arrow-up-right-from-square"></i> Ver demo</a><a href="https://github.com/douglasjro1984-art/el-matadero-carniceria"><i class="fab fa-github"></i> Código</a></div></article>
+<article class="card feat"><span class="badge">En funcionamiento</span><h3>Sistema de gestión de estética</h3><p>Turnos y servicios de un local de estética, con control de gastos y ganancias.</p><ul class="chips"><li>JavaScript</li></ul><div class="links"><a href="https://github.com/douglasjro1984-art/app-chamas-tucuman"><i class="fab fa-github"></i> Código</a></div></article>
+<article class="card feat"><span class="badge">En funcionamiento</span><h3>Carta digital de Cocobongo</h3><p>Carta digital web para un local gastronómico.</p><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="links"><a href="https://github.com/douglasjro1984-art/menu_cocobongo"><i class="fab fa-github"></i> Código</a></div></article>
+<article class="card"><h3>Asistente de hábitos para niños</h3><p>Puntos y rachas, roles de padre e hijo, aprobación de canjes y autenticación por tokens.</p><ul class="chips"><li>Node.js</li><li>Express</li><li>MySQL</li></ul><div class="links"><a href="https://github.com/douglasjro1984-art/Asistente-de-habitos"><i class="fab fa-github"></i> Código</a></div></article>
+<article class="card"><h3>AniMarket</h3><p>App de ventas con backend y frontend separados, preparada para desplegar en Render.</p><ul class="chips"><li>Node.js</li></ul><div class="links"><a href="https://github.com/douglasjro1984-art/AniMarket"><i class="fab fa-github"></i> Código</a></div></article>
+<article class="card"><h3>Control de estacionamiento</h3><p>Aplicación con servidor y cliente separados y script de migración de base de datos.</p><ul class="chips"><li>Node.js</li></ul><div class="links"><a href="https://github.com/douglasjro1984-art/tracker-app"><i class="fab fa-github"></i> Código</a></div></article>
+<article class="card"><h3>Reserva de canchas de pádel</h3><p>Reserva de turnos de canchas y alquiler de indumentaria deportiva.</p><ul class="chips"><li>Aplicación web</li></ul><div class="links"><a href="https://github.com/douglasjro1984-art/cancha-padel-app"><i class="fab fa-github"></i> Código</a></div></article>
+<article class="card"><span class="badge dev">En desarrollo</span><h3>Órdenes de trabajo y turnos</h3><p>Multiservicios Servieltec. Recepción de equipos con fotos y fallas, presupuesto con aprobación del cliente y PDF.</p><ul class="chips"><li>React</li></ul><div class="links"><span class="priv"><i class="fas fa-lock"></i> Código privado</span></div></article>
+<article class="card"><h3>Asistencia y tareas</h3><p>La Ciénega. Marcación con QR personalizado, roles de empleado, encargado y administrador, verificación biométrica y GPS.</p><ul class="chips"><li>Aplicación web</li></ul><div class="links"><span class="priv"><i class="fas fa-lock"></i> Código privado</span></div></article>
   </div>
+</section>
 
-  <div class="contact-section" id="contacto">
-    <div class="contact-heading">
-      <h2>Mantenerse en contacto</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="container-contact">
-      <img src="img/Generated Image September 16, 2025 - 9_38AM (1) (1).png" alt="">
-      <div class="contact-form">
-        <h4>Envíame un mensaje...</h4>
-        <form class="form-group" id="form-contacto">
-          <input type="text" name="nombre" placeholder="Nombre" class="input" aria-label="Nombre" required>
-          <input type="email" name="email" placeholder="Correo electrónico" class="input" aria-label="Correo electrónico" required>
-          <textarea name="mensaje" placeholder="Escribí tu mensaje aquí..." aria-label="Mensaje" required></textarea>
-          <button type="submit" class="btn-submit">Enviar mensaje</button>
-        </form>
-        <p class="direct">También podés escribirme a <a href="mailto:douglasjro1984@gmail.com">douglasjro1984@gmail.com</a></p>
-      </div>
-    </div>
+<section id="quien-soy" class="about">
+  <div>
+    <h2>Quién soy</h2>
+    <p>Soy técnico programador en formación en la UTN, en Tucumán. Aprendo construyendo: cada sistema salió de un problema concreto de un negocio, como llevar el stock, agendar turnos o controlar la asistencia.</p>
+    <p>Mi base está en Python y Node.js, con bases de datos MySQL y APIs REST. Busco mi primera oportunidad profesional como desarrollador junior.</p>
+    <h4 class="mt">Formación y certificados</h4>
+    <ul class="plain"><li>Técnico Programador, UTN Facultad Regional Tucumán (desde 03/2025)</li><li>Curso de iniciación en Python, UTN (05/2025)</li><li>Ciberseguridad y Ethical Hacking, Hacker Mentor Academy</li><li>Iniciación al desarrollo web con IA, Big School</li></ul>
   </div>
+  <div class="skills"><div><h4>Backend</h4><ul class="chips"><li>Python</li><li>Flask</li><li>FastAPI</li><li>Node.js</li><li>Express</li><li>APIs REST</li></ul></div><div><h4>Datos</h4><ul class="chips"><li>MySQL</li><li>SQL</li><li>Diseño de bases de datos</li></ul></div><div><h4>Frontend</h4><ul class="chips"><li>JavaScript</li><li>HTML y CSS</li><li>React</li></ul></div><div><h4>Herramientas</h4><ul class="chips"><li>Git y GitHub</li><li>Tkinter</li><li>Java (en formación)</li></ul></div></div>
+</section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <h1>Douglas Romero</h1>
-      <h5>Desarrollador Backend Jr.</h5>
+<section id="contacto" class="contact">
+  <div class="contact-card">
+    <div class="c-text">
+      <h2>Hablemos</h2>
+      <p class="sub">Escribime y te respondo a la brevedad.</p>
+      <a class="mail" href="mailto:douglasjro1984@gmail.com">douglasjro1984@gmail.com</a>
+      <div class="cta"><a class="btn ghost" href="https://www.linkedin.com/in/douglas-romero-574576384"><i class="fab fa-linkedin"></i> LinkedIn</a><a class="btn ghost" href="https://github.com/douglasjro1984-art"><i class="fab fa-github"></i> GitHub</a></div>
+      <form id="form-contacto">
+        <input type="text" name="nombre" placeholder="Nombre" aria-label="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" aria-label="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Escribí tu mensaje aquí..." aria-label="Mensaje" required></textarea>
+        <button class="btn" type="submit">Enviar mensaje</button>
+      </form>
     </div>
-    <div class="sotial-networks">
-      <a href="https://github.com/douglasjro1984-art" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/douglas-romero-574576384" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:douglasjro1984@gmail.com" aria-label="Correo"><i class="fas fa-envelope"></i></a>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('form-contacto').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var f = e.target;
-      var cuerpo = f.mensaje.value + '\n\n' + f.nombre.value + ' (' + f.email.value + ')';
-      window.location.href = 'mailto:douglasjro1984@gmail.com?subject=' +
-        encodeURIComponent('Contacto desde el portafolio') + '&body=' + encodeURIComponent(cuerpo);
-    });
-  </script>
+    <div class="c-photo"><img src="img/Generated%20Image%20September%2016%2C%202025%20-%209_38AM%20(1)%20(1).png" alt="Douglas Romero sonriendo"></div>
+  </div>
+</section>
+</main>
+<footer><span>Douglas Romero, Desarrollador Backend Jr.</span><span>Tucumán, Argentina</span></footer>
+<script>
+document.getElementById('form-contacto').addEventListener('submit',function(e){e.preventDefault();var f=e.target;var c=f.mensaje.value+'\n\n'+f.nombre.value+' ('+f.email.value+')';window.location.href='mailto:douglasjro1984@gmail.com?subject='+encodeURIComponent('Contacto desde el portafolio')+'&body='+encodeURIComponent(c);});
+</script>
 </body>
-
 </html>
